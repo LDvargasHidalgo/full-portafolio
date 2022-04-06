@@ -13,13 +13,13 @@ function Navigation() {
             </div>
             <ul className="nav-items">
                 <li className="nav-item">
-                <NavLink to="/"> <span>Inicio</span>  </NavLink>
+                <NavLink to="/"> Inicio </NavLink>
                 </li>                              
                 <li className="nav-item">
                     <NavLink to="/projects" activeClassName="active-class" exact>Proyectos</NavLink>
                 </li>               
                 <li className="nav-item">
-                    <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
+                    <NavLink to="/contact" activeClassName="active-class" exact>Contacto</NavLink>
                 </li>
             </ul>
           
@@ -39,7 +39,9 @@ const NavigationStyled = styled.nav`
         width: 100%;
         border-bottom: 1px solid var(--border-color);
         text-align: center;
-        padding: 1rem 0;
+        padding: 2px 0;
+        margin-top: -30px;
+        margin-bottom: 30px;
         img{
             width: 70%;
             border-radius: 50%;
@@ -64,35 +66,21 @@ const NavigationStyled = styled.nav`
                     color: var(--white-color);
                 }
                 /*slip effector when hovering over any item in the list */
-                &::before{
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 0;
-                    height: 50%;
-                    transition: All 0.4s cubic-bezier(1,-0.2,.25,.95) ;
-                    opacity: 0.21;
-                    z-index: -1;
-                }
+                
             }
             a:hover::before{
                 width: 100%;
                 height: 100%;
             }
         }
-    }
-
-    footer{
-        border-top: 1px solid var(--border-color);
-        width: 100%;
+    }    
         p{
             padding: 1.3rem 0;
             font-size: 1.1rem;
             display: block;
             text-align: center;
         }
-    }
+    
 
 .active{
     text-shadow: red 0.1em 0.1em 0.2em;

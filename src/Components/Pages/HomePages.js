@@ -3,20 +3,17 @@ import styled from 'styled-components';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GithubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons//LinkedIn';
-import Particle from '../Particles';
+
 
 function HomePage() {
     return (
         <HomePageStyled>
-            <div className="particle-con">
-            <Particle />
-            </div>
+          
             <div className="typography">
-                <h1>Hi, I'm <span>Laura Vargas</span></h1>
+                <h1>Hola,  soy  <span>Laura Vargas</span></h1>
+                <br />
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Atque nihil voluptates ea dolore vel 
-                    repellat? Quia tenetur non quam exercitationem. Lorem ipsum dolor sit amet.
+                    Desarrolladora web full stack, apasionada por explorar nuevas tecnologías y desarrollar soluciones de software 
                 </p>
                 <div className="icons">
                     <a href="#" className="icon i-facebook">
@@ -39,6 +36,7 @@ function HomePage() {
 }
 
 const HomePageStyled = styled.header`
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Happy+Monkey&display=swap');
     width: 100%;
     height: 100vh;
     position: relative;
@@ -49,17 +47,36 @@ const HomePageStyled = styled.header`
     }
    
     .typography{
-        position: absolute;
+        position: relative;
+        z-index: 101;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
         width: 80%;
 
+            h1{
+                font-size: 1.8rem;
+                color: #e9e6e6;
+
+                span{
+                    font-size: 2.3rem;
+                    font-family: 'Berkshire Swash', cursive;
+                    color: #ffffff;
+                }
+            }
+
+            p{
+                color: #e9e6e6;
+                line-height: 40px;
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
         .icons{
             display: flex;
             justify-content: center;
-            margin-top: 1rem;
+            margin-top: 3rem;
+            
             .icon{
                 border: 2px solid var(--border-color);
                 display: flex;
@@ -70,7 +87,7 @@ const HomePageStyled = styled.header`
                 cursor: pointer;
                 &:hover{
                     border: 2px solid blue;
-                    color: blue;
+                    color: #1059c5;
                 }
                 &:not(:last-child){
                     margin-right: 1rem;
