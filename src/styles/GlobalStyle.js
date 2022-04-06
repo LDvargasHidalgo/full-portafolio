@@ -36,7 +36,7 @@ body {
 a{
    font-family: inherit;
    color:inherit ;
-   font-size: inherit;
+  
 }
 `;
 export default GlobalStyle;

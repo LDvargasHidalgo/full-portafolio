@@ -8,7 +8,6 @@ import LinkedInIcon from '@material-ui/icons//LinkedIn';
 function HomePage() {
     return (
         <HomePageStyled>
-          
             <div className="typography">
                 <h1>Hola,  soy  <span>Laura Vargas</span></h1>
                 <br />
@@ -31,10 +30,8 @@ function HomePage() {
             </div>
            
         </HomePageStyled>
-
     )
 }
-
 const HomePageStyled = styled.header`
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Happy+Monkey&display=swap');
     width: 100%;

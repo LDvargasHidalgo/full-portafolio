@@ -9,10 +9,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
   <GlobalStyle/>
-
   <App />
-  
-  
   </React.StrictMode>,
   document.getElementById('root')
 );

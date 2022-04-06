@@ -1,13 +1,10 @@
 import './App.css';
 import styled from 'styled-components';
-
-import  About  from './Components/About';
 import  Projects  from './Components/Projects';
 import  Contact  from './Components/Contact';
 import  Nav  from './Components/Nav';
 import  Particles  from './Components/Particles';
-import HomePages from './Components/Pages/HomePages';
-
+import HomePages from './Components/Home/HomePages';
 import {BrowserRouter, Route, Routes}from 'react-router-dom'
 
 function App() {
@@ -17,8 +14,7 @@ function App() {
 <Nav/>
  <MainContentStyled>
  <Routes>   
-   <Route path="/" element={  <HomePages/>} />
-   <Route path="/about" element={  <About/>} />
+   <Route path="/" element={  <HomePages/>} />  
    <Route path="/projects" element={  <Projects/>} />
    <Route path="/contact" element={  <Contact/>} />
    </Routes>
