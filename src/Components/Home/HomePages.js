@@ -4,7 +4,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import GithubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons//LinkedIn";
 import { Link } from "react-router-dom";
-
+import "../Navigation/nav.css"
 function HomePage() {
   return (
     <HomePageStyled>

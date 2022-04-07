@@ -1,9 +1,16 @@
-import image1 from "../img/react-ecomerce.png"
+import Ecomerce from "../img/react-ecomerce.png";
+import Agenda from "../img/php-agenda.png"
+import Todo from "../img/todo-mern.png"
+import Toquem from "../img/toquemEl-Dom.png"
+import CovidApp from "../img/js-covimap.png"
+import Portafolio from "../img/portafolio.png"
+
+
 const ProjectsData =[
    {
       id: 1,
       title: 'Ecomerce',
-      image:{image1},
+      image: Ecomerce ,
        git:'https://github.com/LDvargasHidalgo/LaMamona', 
       deploy:"https://la-mamona-e.vercel.app/gallery/pescado",
       language:"react"
@@ -11,7 +18,7 @@ const ProjectsData =[
    {
       id: 2,
       title: 'Agenda',
-      image:'../img/php-agenda.png',
+      image:Agenda,
       git:'https://github.com/LDvargasHidalgo/crud-mvc-php',
       deploy:"http://crud-php-citas.epizy.com/crud-citas-poo-mvc/index.php",
       language:"php"
@@ -19,17 +26,31 @@ const ProjectsData =[
    {
       id: 3,
       title: 'TodoList',
-      image:'../img/todo-mern.png',
+      image:Todo,
       git:'https://github.com/LDvargasHidalgo/TodoListMERN',
       deploy:"https://todolist-mern2022.herokuapp.com/",
       language:"mern"
    },
    {
       id: 4,
-      title: 'Escuela de música',
-      image:'/toquemEl-Dom',
+      title: ' Música',
+      image:Toquem,
       git:'https://github.com/LDvargasHidalgo/ProyectosEducamas/tree/main/JS/proyecto%20de%20musica',    
       language:"js"
+   },
+   {
+      id: 5,
+      title: 'CovidApp',
+      image:CovidApp,
+      git:'https://jhuset2003.github.io/Impacto_Covid-19_en_el_mundo/',    
+      language:"js"
+   },
+   {
+      id: 6,
+      title: 'Portafolio',
+      image:Portafolio, 
+      git:'https://github.com/LDvargasHidalgo/full-portafolio',    
+      language:"react"
    },
 ];
 

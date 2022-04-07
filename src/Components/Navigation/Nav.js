@@ -11,15 +11,15 @@ function Navigation() {
        	<header className="header">
 		<div className="container">
 		<div className="btn-menu">
-			<label for="btn-menu">☰</label>
+			<label htmlFor="btn-menu">☰</label>
 		</div>
-			{/* <div class="logo">
+			{/* <div className="logo">
 				<h1>Desarrolladora Full Stack</h1>
 			</div> */}
 			<nav className="menu">
-				<NavLink to="/" activeClassName="active-class" exact>Inicio</NavLink>
-				<NavLink to="/projects" activeClassName="active-class" exact>Proyectos</NavLink>
-				<NavLink to="/contact" activeClassName="active-class" exact>Contacto</NavLink>
+				<NavLink to="/" activeclassname="active-class" >Inicio</NavLink>
+				<NavLink to="/projects" activeclassname="active-class" >Proyectos</NavLink>
+				<NavLink to="/contact" activeclassname="active-class">Contacto</NavLink>
 			</nav>
 		</div>
 	</header>
@@ -31,7 +31,7 @@ function Navigation() {
 		<Sidebar/>
 		</div>
 		<div className="bt-menu">
-		<label for="btn-menu" className='btn-menu'>
+		<label htmlFor="btn-menu" className='btn-menu'>
 		<h2>X</h2>
 		</label>
 		</div>

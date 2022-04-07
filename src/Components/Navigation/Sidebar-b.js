@@ -15,12 +15,12 @@ function Navigation() {
           <NavLink to="/"> Inicio </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/projects" activeClassName="active-class" exact>
+          <NavLink to="/projects" activeclassname="active-class" >
             Proyectos
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/contact" activeClassName="active-class" exact>
+          <NavLink to="/contact" activeclassname="active-class" >
             Contacto
           </NavLink>
         </li>

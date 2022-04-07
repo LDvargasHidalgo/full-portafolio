@@ -13,14 +13,14 @@ function Projects() {
   const[items, setItems] = useState(ProjectsData );
   return (    
     < ProjectsPageStyled>
-                  <div class="container-main-cards">
+                  <div className="container-main-cards">
                        {
               items.map((elem) => {
                 const {id,title,image,git,deploy}=elem;
 
                 return(
           
-                <div className="card">                
+                <div className="card" key={id}>                
                   <img src={image} alt="" />
                   <div className="content">
                     <div className="content">
