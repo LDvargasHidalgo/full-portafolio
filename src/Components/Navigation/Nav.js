@@ -58,7 +58,7 @@ const NavStyled = styled.nav`
 		z-index: -1;
 		top: 0;left: 0;
 	}
-	/*Estilos para el encabezado*/
+	/*Estilos para el encabezado b*/
 	.header{
 		width: 100%;
 		height: 100px;
