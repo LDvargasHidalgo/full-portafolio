@@ -9,12 +9,12 @@ function Projects() {
     < ProjectsPageStyled>
 
       <div class="container-main-cards">
-        <div class="card">
+        <div className="card">
           <img src={Imagecomerce} alt="" />
-          <div class="content">
-            <h2>Ecomerce</h2>
+          <div className="content">
+            <h2>Ecomerce</h2>        
             <Link to="#">Github</Link>
-            <Link to="#">Deploy</Link>
+            <Link to="#">Deploy</Link>            
           </div>
         </div>
       </div>
@@ -44,8 +44,7 @@ const ProjectsPageStyled = styled.header`
    margin: 20px;
    width: 300px;
    height: 200px;
-   border-radius: 5px;
-/*    background: var(--i); */
+   border-radius: 5px;   
    background-size: 300px 200px;
    box-shadow: 3px 5px 5px rgba(3,32,51,.8);
 }
@@ -61,11 +60,12 @@ const ProjectsPageStyled = styled.header`
    height: 100%;
    display: flex;
    flex-direction: column;
+ justify-content: space-between;
    align-items: center;
    justify-content: center;
    background: rgba(0,0,0,.6);
    opacity: 0;
-   transition: 1s;
+   transition: 1s; 
 }
 
 .content h2, a{
