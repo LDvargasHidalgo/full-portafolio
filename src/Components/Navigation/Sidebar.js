@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Navigation from "./Navigation"
+import Navigation from "./Sidebar-b"
 
 /* espacio gris al lado izquierdo de la pantalla */
 function Sidebar() {

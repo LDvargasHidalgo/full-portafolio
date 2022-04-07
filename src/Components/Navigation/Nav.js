@@ -1,18 +1,52 @@
-@import url('https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_960_720.jpg');
-	*{
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		font-family: 'Montserrat Alternates', sans-serif;
-	}
-	body{
-		/* background: url(https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
-		background-size: 100vw 100vh;
-		background-repeat: no-repeat;
-		
-	}
+import React from 'react';
+import Sidebar from './Sidebar';
+import {NavLink} from 'react-router-dom';
+import styled from "styled-components";
+/* import "./nav.css" */
 
-	.nav{
+function Navigation() {
+  return (
+	<NavStyled>
+    <div className='nav' >
+       	<header className="header">
+		<div className="container">
+		<div className="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			{/* <div class="logo">
+				<h1>Desarrolladora Full Stack</h1>
+			</div> */}
+			<nav className="menu">
+				<NavLink to="/" activeClassName="active-class" exact>Inicio</NavLink>
+				<NavLink to="/projects" activeClassName="active-class" exact>Proyectos</NavLink>
+				<NavLink to="/contact" activeClassName="active-class" exact>Contacto</NavLink>
+			</nav>
+		</div>
+	</header>
+	<div className="capa"></div>
+	<input type="checkbox"  id="btn-menu"/>
+	<div className="container-menu">
+	<div className="cont-menu">
+		<div>
+		<Sidebar/>
+		</div>
+		<div className="bt-menu">
+		<label for="btn-menu" className='btn-menu'>
+		<h2>X</h2>
+		</label>
+		</div>
+	</div>
+</div>
+    </div>
+	 </NavStyled>
+  )
+}
+const NavStyled = styled.nav`
+	 /*  background: url(https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); 
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;		 */
+
+		.nav{
 		position:relative;
 		z-index: 100;
 	}
@@ -137,3 +171,8 @@
 		cursor: pointer;
 		font-size: 18px;
 	}
+
+`;
+
+
+export default Navigation
