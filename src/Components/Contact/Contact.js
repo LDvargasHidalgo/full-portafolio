@@ -3,11 +3,19 @@ import styled from "styled-components";
 import emailjs from 'emailjs-com';
 
 export const Contact = () => {
+  
+const sendEmail = (event) => {
+  event.preventDefault();
+  
+  emailjs.sendForm('service_pd5l3tu','template_qd8fhge',event.target,'7P6gSedE1cFRSlXnx')
+  .then(response=>console.log(response))
+  .catch(error => console.log(error))
+}
   return (
     <ContactStyled>
     <div className="div-form">
       <h1 className="title-form">Contact us </h1>
-        <form action="" className="form-mail">
+        <form action="" className="form-mail" onSubmit={sendEmail}>
           <label >Name</label>
           <input type="text"  name='user_name'/>
           <hr />
@@ -27,7 +35,7 @@ export const Contact = () => {
     </ContactStyled>
   )
 }
-const ContactStyled = styled.form`
+const ContactStyled = styled.header`
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Fuzzy+Bubbles&family=Lobster&family=Pacifico&family=Redressed&family=Shadows+Into+Light&family=Vujahday+Script&display=swap');
 
 h1 {
@@ -94,4 +102,4 @@ button:focus {
   color: #ffff;
 }
 `;
-export default Contact
+

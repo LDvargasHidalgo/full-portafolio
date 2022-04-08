@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Contact from './Components/Contact/Contact'
+import {Contact }from './Components/Contact/Contact'
 import  Nav  from './Components/Navigation/Nav';
 import  Particles  from './Components/Particles/Particles';
 import HomePages from './Components/Home/HomePages';
