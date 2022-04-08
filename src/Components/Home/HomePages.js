@@ -36,6 +36,7 @@ function HomePage() {
   );
 }
 const HomePageStyled = styled.header`
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Fuzzy+Bubbles&family=Lobster&family=Pacifico&family=Redressed&family=Shadows+Into+Light&family=Vujahday+Script&display=swap');
   height: 100vh;
   position: relative;
 
@@ -46,7 +47,7 @@ const HomePageStyled = styled.header`
 
   .typography {
     position: relative;
-    z-index: 101;
+    z-index: 100;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -58,8 +59,9 @@ const HomePageStyled = styled.header`
       color: #e9e6e6;
 
       span {
-        font-size: 2.3rem;
-        color: #ffffff;
+        font-size: 3.5rem;
+        color: var(--primary-color);
+        font-family: 'Shadows Into Light', cursive;
       }
     }
 

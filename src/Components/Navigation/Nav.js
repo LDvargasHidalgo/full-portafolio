@@ -146,7 +146,7 @@ const NavStyled = styled.nav`
 	}
 	#btn-menu:checked ~ .container-menu .cont-menu{
 		transform: translateX(0%);
-		color: white;
+		color: var(  --font-light-color);
 	}
 	.cont-menu nav{
 		transform: translateY(15%);
@@ -155,7 +155,7 @@ const NavStyled = styled.nav`
 		display: block;
 		text-decoration: none;
 		padding: 20px;
-		color: #c7c7c7;
+		color: var(  --font-light-color);
 
 	}
 	.cont-menu nav a:hover{

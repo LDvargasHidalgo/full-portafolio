@@ -35,10 +35,10 @@ const NavigationStyled = styled.nav`
   align-items: center;
   height: 100%;
   width: 100%;
-  border-right: 1px solid var(--border-color);
+  border-right: 1px solid var(--primary-color);
   .photo {
     width: 100%;
-    border-bottom: 1px solid var(--border-color);
+  /*   border-bottom: 1px solid var(--primary-color); */
     text-align: center;
     padding: 2px 0;
     margin-top: -30px;
@@ -46,7 +46,7 @@ const NavigationStyled = styled.nav`
     img {
       width: 70%;
       border-radius: 50%;
-      border: 8px solid var(--border-color);
+      border: 2px solid var(--primary-color);
     }
   }
   .nav-items {
@@ -82,7 +82,7 @@ const NavigationStyled = styled.nav`
   }
 
   .active {
-    text-shadow: red 0.1em 0.1em 0.2em;
+    text-shadow: red 0.2em 0.2em 0.2em;
     padding-left: 20px;
   }
 `;

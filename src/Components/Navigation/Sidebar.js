@@ -16,7 +16,7 @@ width:16.3rem;
 position:fixed;
 height:100vh;
 overflow: hidden;
-background-color: var(--sidebar-dark-color);
+background-color: transparent;
 
 `;
 

@@ -10,13 +10,13 @@ import {BrowserRouter, Route, Routes}from 'react-router-dom'
 function App() {
   return (  
  <BrowserRouter>
-{/* <Particles/>
-<Nav/> */}
+<Particles/>
+<Nav/> 
  <MainContentStyled>
  <Routes>   
-{/* <Route path="/" element={  <HomePages/>} />   */}
+<Route path="/" element={  <HomePages/>} />   
    <Route path="/contact" element={  <Contact/>} />
-{/*    <Route path="/projects" element={  <Projects/>} /> */}
+<Route path="/projects" element={  <Projects/>} /> 
    </Routes>
    </MainContentStyled>
    </BrowserRouter>

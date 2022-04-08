@@ -8,13 +8,13 @@ const sendEmail = (event) => {
   event.preventDefault();
   
   emailjs.sendForm('service_pd5l3tu','template_qd8fhge',event.target,'7P6gSedE1cFRSlXnx')
-  .then(response=>console.log(response))
+  .then(response=>alert('Tu mensaje ha sido enviado correctamente'))
   .catch(error => console.log(error))
 }
   return (
     <ContactStyled>
     <div className="div-form">
-      <h1 className="title-form">Contact us </h1>
+      <h1 className="title-form">Contactame</h1>
         <form action="" className="form-mail" onSubmit={sendEmail}>
           <label >Name</label>
           <input type="text"  name='user_name'/>
@@ -25,7 +25,7 @@ const sendEmail = (event) => {
           <hr />
 
           <label >Mensaje</label>
-          <textarea name="user_message" id="" cols="30" rows="10"></textarea>
+          <textarea name="user_message" id="" cols="23" rows="2"></textarea>
           <hr />
           <button>Enviar</button>
         </form>
@@ -37,9 +37,10 @@ const sendEmail = (event) => {
 }
 const ContactStyled = styled.header`
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Fuzzy+Bubbles&family=Lobster&family=Pacifico&family=Redressed&family=Shadows+Into+Light&family=Vujahday+Script&display=swap');
-
+position: relative;
+z-index: 101;
 h1 {
-  color: #ff6600;
+  color: #ae0d23;
   font-size: 5rem;
   font-weight: 600;
   font-family: 'Shadows Into Light', cursive;
@@ -48,11 +49,9 @@ h1 {
 
 .form-mail {
   width: 20rem;
-  border: groove 3px #ffff;
+  border: groove 3px var(--border-color) ;
   border-radius:15px;
-  box-shadow: -3px -2px 1px #535366;
-  background: #232526;  
-  background: linear-gradient(to right, #414345, #232526);  
+  box-shadow: -3px -2px 1px  var(--border-color);
   opacity: 0.8;  
   padding: 1rem;
   display: flex;
@@ -66,7 +65,8 @@ hr {
 
 label {
   font-size: 1.5rem;
-  color: #9cc7f3;
+  color: var(--primary-color);
+  -webkit-text-stroke: 0.2px white;
   font-weight: 900;
   margin-bottom: 0.5rem;
 }
@@ -81,25 +81,32 @@ input {
 
 textarea {
   border-radius: 10px;
-  background-color: #a3a8af;
+  background: transparent;
   padding: 0.5rem;
+  color: white;
 }
 
 button {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffff;
   width: 8rem;
   border-radius: 20px;
-  font-size: 1.2rem;
-  color: green;
-  background-color: #9df59d;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 900;
+  background-color: var(--primary-color);
   cursor: pointer;
 }
 
 button:hover,
 button:focus {
-  background-color: green;
+  background-color: transparent;
   font-size: 1.5rem;
   font-weight: 700;
   color: #ffff;
+  background-position: 0 -50px;
+    transition: all .3s;
 }
 `;
 
