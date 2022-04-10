@@ -1,118 +1,116 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
 export const Contact = () => {
-  
-const sendEmail = (event) => {
-  event.preventDefault();
-  
-  emailjs.sendForm('service_pd5l3tu','template_qd8fhge',event.target,'7P6gSedE1cFRSlXnx')
-  .then(response=>alert('Tu mensaje ha sido enviado correctamente'))
-  .catch(error => console.log(error))
-}
+  const sendEmail = (event) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_pd5l3tu",
+        "template_qd8fhge",
+        event.target,
+        "7P6gSedE1cFRSlXnx"
+      )
+      .then((response) => alert("Tu mensaje ha sido enviado correctamente"))
+      .catch((error) => console.log(error));
+  };
   return (
     <ContactStyled>
-    <div className="div-form">
-      <h1 className="title-form">Contactame</h1>
+      <div className="div-form">
+        <h4 className="title-form">Contactame</h4>
         <form action="" className="form-mail" onSubmit={sendEmail}>
-          <label >Name</label>
-          <input type="text"  name='user_name'/>
+        
+          <label>Name</label>
+          <input type="text" name="user_name" />
+          <label>Email</label>
+          <input type="email" name="eser_email" />
           <hr />
 
-          <label >Email</label>
-          <input type="email" name='eser_email' />
-          <hr />
-
-          <label >Mensaje</label>
-          <textarea name="user_message" id="" cols="23" rows="2"></textarea>
+          <label>Mensaje</label>
+          <textarea name="user_message" id="" cols="20" rows="2"></textarea>
           <hr />
           <button>Enviar</button>
         </form>
-   
-    </div>
-  
+      </div>
     </ContactStyled>
-  )
-}
+  );
+};
 const ContactStyled = styled.header`
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Fuzzy+Bubbles&family=Lobster&family=Pacifico&family=Redressed&family=Shadows+Into+Light&family=Vujahday+Script&display=swap');
-position: relative;
-z-index: 101;
-height: 100vh;
-border: 5px solid green;
-display: flex;
-justify-content: center;
-padding: 25px;
-
-h1 {
-  color: #ae0d23;
-  font-size: 5rem;
-  font-weight: 600;
-  font-family: 'Shadows Into Light', cursive;
-  margin: 0;
-}
-
-.form-mail {
-  width: 20rem;
-  border: groove 3px var(--border-color) ;
-  border-radius:15px;
-  box-shadow: -3px -2px 1px  var(--border-color);
-  opacity: 0.8;  
-  padding: 1rem;
+  @import url("https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Fuzzy+Bubbles&family=Lobster&family=Pacifico&family=Redressed&family=Shadows+Into+Light&family=Vujahday+Script&display=swap");
+  z-index: 101;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  justify-content: center;
 
-hr {
-  width: 20rem;
-}
+  h4{
+    color: #ae0d23;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Shadows Into Light", cursive;
+    margin: 0;
+    text-align: center;
+  }
 
-label {
-  font-size: 1.5rem;
-  color: var(--primary-color);
-  -webkit-text-stroke: 0.2px white;
-  font-weight: 900;
-  margin-bottom: 0.5rem;
-}
+  .form-mail {
+    width: 40rem;
+    border: groove 3px var(--border-color);
+    border-radius: 15px;
+    box-shadow: -3px -2px 1px var(--border-color);
+    opacity: 0.8;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
 
-input {
-  font-size: 1rem;
-  background: transparent;
-  box-shadow: 0 -2px 2px rgb(199, 194, 194);
-  border-radius: 20px;
-  color: #ffff;
-}
+  }
 
-textarea {
-  border-radius: 10px;
-  background: transparent;
-  padding: 0.5rem;
-  color: white;
-}
+  hr {
+    width: 20rem;
+  }
 
-button {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffff;
-  width: 8rem;
-  border-radius: 20px;
-  font-size: 1.5rem;
-  color: white;
-  font-weight: 900;
-  background-color: var(--primary-color);
-  cursor: pointer;
-}
+  label {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    -webkit-text-stroke: 0.2px white;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+  }
 
-button:hover,
-button:focus {
-  background-color: transparent;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffff;
-  background-position: 0 -50px;
-    transition: all .3s;
-}
+  input {
+    font-size: 1rem;
+    background: transparent;
+    box-shadow: 0 -2px 2px rgb(199, 194, 194);
+    border-radius: 20px;
+    color: #ffff;
+  }
+
+  textarea {
+    border-radius: 10px;
+    background: transparent;
+    padding: 0.5rem;
+    color: white;
+  }
+
+  button {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffff;
+    width: 8rem;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 900;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+
+  button:hover,
+  button:focus {
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffff;
+    background-position: 0 -50px;
+    transition: all 0.3s;
+  }
 `;
-

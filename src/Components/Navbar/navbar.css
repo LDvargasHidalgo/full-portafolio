@@ -20,6 +20,15 @@ a:hover{
  padding: 2px;
 }
 
+.active{
+  text-shadow: 0 0 5px rgb(226, 113, 7),  0 0 15px rgb(226, 113, 7),  0 0 30px rgb(226, 113, 7), 0 0 5px rgb(226, 113, 7);
+}
+
+
+  .span{
+    font-size: 2rem;
+   text-shadow: 0 0 5px var(--primary-color),  0 0 15px var(--primary-color),  0 0 30px var(--primary-color), 0 0 5px var(--primary-color);
+  }
 
 
 .nav {
