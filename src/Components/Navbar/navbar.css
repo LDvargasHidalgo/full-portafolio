@@ -20,6 +20,8 @@ a:hover{
  padding: 2px;
 }
 
+
+
 .nav {
   position: relative;
   z-index: 150;
@@ -73,7 +75,6 @@ a:hover{
 .nav__active {
   transform: translateX(0%);
 }
-
 /* Toggle Icon Animation */
 
 .toggle .line1 {
