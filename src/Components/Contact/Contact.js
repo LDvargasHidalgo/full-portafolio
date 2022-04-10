@@ -39,6 +39,12 @@ const ContactStyled = styled.header`
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Fuzzy+Bubbles&family=Lobster&family=Pacifico&family=Redressed&family=Shadows+Into+Light&family=Vujahday+Script&display=swap');
 position: relative;
 z-index: 101;
+height: 100vh;
+border: 5px solid green;
+display: flex;
+justify-content: center;
+padding: 25px;
+
 h1 {
   color: #ae0d23;
   font-size: 5rem;
