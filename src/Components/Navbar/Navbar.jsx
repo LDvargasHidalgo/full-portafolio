@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./navbar.css";
+import "./navbar.css"; 
 
 function Navbar() {
   const [active, setActive] = useState("nav__menu");

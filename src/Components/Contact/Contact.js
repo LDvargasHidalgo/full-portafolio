@@ -42,7 +42,7 @@ const ContactStyled = styled.header`
   z-index: 101;
   display: flex;
   justify-content: center;
-
+  
   h4{
     color: #ae0d23;
     font-size: 3rem;
@@ -61,7 +61,7 @@ const ContactStyled = styled.header`
     padding: 1rem;
     display: flex;
     flex-direction: column;
-
+    
   }
 
   hr {

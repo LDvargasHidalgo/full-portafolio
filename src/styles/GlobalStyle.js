@@ -19,8 +19,8 @@ html{
    list-style: none;
    text-decoration: none;
    font-family: 'Berkshire Swash', cursive;
-font-family: 'Happy Monkey', cursive;
-font-family: 'Mulish', sans-serif;
+   font-family: 'Happy Monkey', cursive;
+   font-family: 'Mulish', sans-serif;
    font-size:1.2rem ;
   /*  font-size: 1.2rem; */
 }

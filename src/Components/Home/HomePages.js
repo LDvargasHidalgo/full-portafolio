@@ -42,18 +42,17 @@ function HomePage() {
             </div>
             <br />
             <div>
-          <a href="#" class="btn-neon">
-        <span id="span1"></span>
-        <span id="span2"></span>
-        <span id="span3"></span>
-        <span id="span4"></span>
-        <b>Descargar CV</b>  
-        </a>
+              <Link to="#" className="btn-neon">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                <b>Descargar CV</b>
+              </Link>
             </div>
           </div>
         </div>
-              </div>
-          
+      </div>
     </HomePageStyled>
   );
 }
@@ -68,7 +67,12 @@ const HomePageStyled = styled.header`
   }
   .container {
     margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
   .tipography {
     text-align: center;
     padding: 3px 20px;
@@ -78,6 +82,7 @@ const HomePageStyled = styled.header`
     }
     h1 {
       font-size: 1.3rem;
+      font-weight: 900;
     }
     span {
       font-size: 1.8rem;
@@ -93,8 +98,11 @@ const HomePageStyled = styled.header`
     display: flex;
     justify-content: center;
 
+    width: 200px;
+    height: 200px;
     img {
-      width: 200px;
+      width: 100%;
+      height: 100%;
       border-radius: 50%;
     }
   }
@@ -145,115 +153,117 @@ const HomePageStyled = styled.header`
   }
 
   //prueba botn
-  .btn-neon{
+  .btn-neon {
     position: relative;
     display: inline-block;
     padding: 15px 30px;
-    color: #fff;   
+    color: #fff;
     letter-spacing: 4px;
     text-decoration: none;
     font-size: 24px;
     overflow: hidden;
     transition: 0.2s;
-}
-.btn-neon:hover{
+  }
+  .btn-neon:hover {
     background: var(--primary-color);
-    box-shadow: 0 0 10px var(--primary-color), 0 0 40px var(--primary-color), 0 0 80px var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color), 0 0 40px var(--primary-color),
+      0 0 80px var(--primary-color);
     transition-delay: 1s;
- }
-.btn-neon span{
+  }
+  .btn-neon span {
     position: absolute;
     display: block;
-}
-#span1{
+  }
+  #span1 {
     top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent,var(--primary-color));
- }
- .btn-neon:hover #span1{
+    background: linear-gradient(90deg, transparent, var(--primary-color));
+  }
+  .btn-neon:hover #span1 {
     left: 100%;
     transition: 1s;
-}
- #span3{
+  }
+  #span3 {
     bottom: 0;
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent,var(--primary-color));
-}
- .btn-neon:hover #span3{
+    background: linear-gradient(270deg, transparent, var(--primary-color));
+  }
+  .btn-neon:hover #span3 {
     right: 100%;
     transition: 1s;
     transition-delay: 0.5s;
-}
-#span2{
+  }
+  #span2 {
     top: -100%;
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg,transparent,var(--primary-color));
-}
-.btn-neon:hover #span2{
+    background: linear-gradient(180deg, transparent, var(--primary-color));
+  }
+  .btn-neon:hover #span2 {
     top: 100%;
     transition: 1s;
     transition-delay: 0.25s;
-}
-#span4{
+  }
+  #span4 {
     bottom: -100%;
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg,transparent,var(--primary-color));
-}
-.btn-neon:hover #span4{
+    background: linear-gradient(360deg, transparent, var(--primary-color));
+  }
+  .btn-neon:hover #span4 {
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
-}
+  }
 
-  /* Cuando el ancho de la pantalla tenga como minimo 600px TABLETS*/
   @media (min-width: 600px) {
-    .photo {
-      img {
-        width: 300px;
-        border-radius: 50%;
-      }
-    }
-    .tipography {
-      p {
-        font-size: 1.2rem;
-      }
-    }
+    .container {
+    margin-top:0;
   }
 
-  /* Cunado la pantalla sea más grande de 994px  */
-  @media (min-width: 994px) {
+    .photo {
+    width: 300px;
+    height: 300px;
+  }
+
+  }
+
+  @media (min-width: 992px) {
     .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-    }
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
   }
-  .photo {
-    img {
-      width: 400px;
-    }
+
+    .photo {
+    min-width: 400px;
+    height: auto;
+    padding: 3%;
   }
-  .tipography {
+
+   .tipography {
+
     p {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
     h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      font-weight: 900;
     }
     span {
-      font-size: 3rem;
+      font-size: 2rem;
       font-family: "Shadows Into Light", cursive;
       color: var(--primary-color);
     }
+  }
   }
 `;
 
