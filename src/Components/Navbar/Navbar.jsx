@@ -69,7 +69,6 @@ li {
 }
 a {
   text-decoration: none;
-  color: rgb(204, 204, 204);
   font-size: 1.5rem;
   padding: 10px;
 }
@@ -89,9 +88,8 @@ a:hover{
    text-shadow: 0 0 5px var(--primary-color),  0 0 15px var(--primary-color),  0 0 30px var(--primary-color), 0 0 5px var(--primary-color);
   }
 
-
 .nav {
-  position: relative;
+  position: static;
   z-index: 150;
   display: flex;
   align-items: center;
@@ -122,14 +120,14 @@ a:hover{
   transition: 0.3s ease-in;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 815px) {
   .nav__toggler {
     display: block;
     cursor: pointer;
   }
   .nav__menu {
     position: fixed;
-    top: 5vh;
+    top: 0.1vh;
     right: 0;
     height: 50%;
     width: 100vw;
@@ -137,6 +135,7 @@ a:hover{
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
+    padding-top: 30%;
     
   }
 }

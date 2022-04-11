@@ -91,8 +91,7 @@ const HomePageStyled = styled.header`
       color: var(--primary-color);
     }
 
-    button {
-    }
+
   }
 
   .photo {
