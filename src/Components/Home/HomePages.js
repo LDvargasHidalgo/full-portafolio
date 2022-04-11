@@ -37,6 +37,7 @@ function HomePage() {
                 href="https://www.linkedin.com/in/daniela-vargas-hidalgo/"
                 className="icon i-LinkedIn"
               >
+          
                 <LinkedInIcon />
               </a>
 
