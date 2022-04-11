@@ -5,6 +5,7 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons//LinkedIn";
 import { Link } from "react-router-dom";
 import Photo from "../../img/foto.jpg";
+import Cv from "../../assets/Laura Daniela Vargas Hidalgo.pdf"
 
 function HomePage() {
   return (
@@ -45,13 +46,13 @@ function HomePage() {
             </div>
             <br />
             <div>
-              <Link to="#" className="btn-neon">
+              <a href={Cv} download={"downloadCv"} className="btn-neon">
                 <span id="span1"></span>
                 <span id="span2"></span>
                 <span id="span3"></span>
                 <span id="span4"></span>
                 <b>Descargar CV</b>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
