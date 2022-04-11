@@ -19,17 +19,20 @@ export const Contact = () => {
   return (
     <ContactStyled>
       <div className="div-form">
-        <h4 className="title-form">Contactame</h4>
+        <h4 className="title-form">Contáctame</h4>
         <form action="" className="form-mail" onSubmit={sendEmail}>
-        
-          <label>Name</label>
+      <div className="section-form">
+          <label>Nombre</label>
           <input type="text" name="user_name" />
-          <label>Email</label>
+          </div>
+          <div className="section-form">
+          <label>Correo</label>
           <input type="email" name="eser_email" />
-          <hr />
-
+          </div>       
+          <div className="section-form">
           <label>Mensaje</label>
           <textarea name="user_message" id="" cols="20" rows="2"></textarea>
+          </div>
           <hr />
           <button>Enviar</button>
         </form>
@@ -39,78 +42,40 @@ export const Contact = () => {
 };
 const ContactStyled = styled.header`
   @import url("https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Fuzzy+Bubbles&family=Lobster&family=Pacifico&family=Redressed&family=Shadows+Into+Light&family=Vujahday+Script&display=swap");
-  z-index: 101;
+  z-index: 200;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin:0 auto;
   
-  h4{
-    color: #ae0d23;
-    font-size: 3rem;
-    font-weight: 600;
-    font-family: "Shadows Into Light", cursive;
-    margin: 0;
-    text-align: center;
-  }
 
-  .form-mail {
-    width: 40rem;
-    border: groove 3px var(--border-color);
-    border-radius: 15px;
-    box-shadow: -3px -2px 1px var(--border-color);
-    opacity: 0.8;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    
-  }
+.div-form {
+  min-width:70%;
+  border:3px dashed   #ae0d23;
+  margin: 10px  15px;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  justify-content: center;
+  text-align: center;
+  padding: 3%;
+  border-radius: 2%;
+}
 
-  hr {
-    width: 20rem;
-  }
+.section-form {
+  display: flex;
+  flex-direction: column;
+ align-items: start;
+ padding: 10px;
 
-  label {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    -webkit-text-stroke: 0.2px white;
-    font-weight: 900;
-    margin-bottom: 0.5rem;
-  }
+ input{
+   width: 100%;
+   
+ }
 
-  input {
-    font-size: 1rem;
-    background: transparent;
-    box-shadow: 0 -2px 2px rgb(199, 194, 194);
-    border-radius: 20px;
-    color: #ffff;
-  }
+ textarea {
+  width: 100%;
+ }
+}
 
-  textarea {
-    border-radius: 10px;
-    background: transparent;
-    padding: 0.5rem;
-    color: white;
-  }
-
-  button {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #ffff;
-    width: 8rem;
-    border-radius: 20px;
-    font-size: 1.5rem;
-    color: white;
-    font-weight: 900;
-    background-color: var(--primary-color);
-    cursor: pointer;
-  }
-
-  button:hover,
-  button:focus {
-    background-color: transparent;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #ffff;
-    background-position: 0 -50px;
-    transition: all 0.3s;
-  }
 `;
