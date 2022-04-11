@@ -37,12 +37,9 @@ function HomePage() {
               <a
                 href="https://www.linkedin.com/in/daniela-vargas-hidalgo/"
                 className="icon i-LinkedIn"
-              >
-          
+              >          
                 <LinkedInIcon />
-              </a>
-
-             
+              </a>             
             </div>
             <br />
             <div>
@@ -240,7 +237,7 @@ const HomePageStyled = styled.header`
 
   @media (min-width: 992px) {
     .container {
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     flex-direction: row;
     justify-content: center;
