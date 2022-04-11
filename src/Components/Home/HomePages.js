@@ -30,15 +30,17 @@ function HomePage() {
               <Link to="#" className="icon i-facebook">
                 <FacebookIcon />
               </Link>
-              <Link to="#" className="icon i-github">
+              <a href="https://github.com/LDvargasHidalgo" className="icon i-github">
                 <GithubIcon />
-              </Link>
-              <Link
-                to="https://www.linkedin.com/in/daniela-vargas-hidalgo/"
+              </a>
+              <a
+                href="https://www.linkedin.com/in/daniela-vargas-hidalgo/"
                 className="icon i-LinkedIn"
               >
                 <LinkedInIcon />
-              </Link>
+              </a>
+
+             
             </div>
             <br />
             <div>
