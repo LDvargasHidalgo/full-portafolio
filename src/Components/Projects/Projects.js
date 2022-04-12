@@ -51,26 +51,30 @@ const ProjectsPageStyled = styled.header`
     flex-wrap: wrap;
     justify-content: center;
     min-height: 70vh;
+ 
   }
 
   .card {
     margin: 20px;
-    width: 400px;
+    width: 330px;
     height: 300px;
     border-radius: 5px;
-  /*   background-size: 300px 200px; */
-   /*  margin-top: 55px; */
+    margin: 10px;
+    background-color: black;
+    border-radius: 10%;
   }
 
   .card img {
-    width: 400px;
+    width: 330px;
     height: 300px;
     position: absolute;
+    border-radius: 10%;
   }
   .content {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 330px;
+    height: 300px;
+    border-radius: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -126,6 +130,14 @@ const ProjectsPageStyled = styled.header`
         color: #5f4687;
       }
     }
+  }
+
+  @media (min-width: 600px) {
+margin-top: 50px;
+ .card{
+   margin: 30px;
+ }
+
   }
 `;
 

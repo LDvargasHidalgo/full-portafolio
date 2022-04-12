@@ -5,7 +5,7 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons//LinkedIn";
 import { Link } from "react-router-dom";
 import Photo from "../../img/foto.jpg";
-import Cv from "../../assets/Laura Daniela Vargas Hidalgo.pdf"
+import Cv from "../../assets/Laura Daniela Vargas Hidalgo.pdf";
 
 function HomePage() {
   return (
@@ -31,15 +31,18 @@ function HomePage() {
               <Link to="#" className="icon i-facebook">
                 <FacebookIcon />
               </Link>
-              <a href="https://github.com/LDvargasHidalgo" className="icon i-github">
+              <a
+                href="https://github.com/LDvargasHidalgo"
+                className="icon i-github"
+              >
                 <GithubIcon />
               </a>
               <a
                 href="https://www.linkedin.com/in/daniela-vargas-hidalgo/"
                 className="icon i-LinkedIn"
-              >          
+              >
                 <LinkedInIcon />
-              </a>             
+              </a>
             </div>
             <br />
             <div>
@@ -90,8 +93,6 @@ const HomePageStyled = styled.header`
       font-family: "Shadows Into Light", cursive;
       color: var(--primary-color);
     }
-
-
   }
 
   .photo {
@@ -224,46 +225,44 @@ const HomePageStyled = styled.header`
 
   @media (min-width: 600px) {
     .container {
-    margin-top:0;
-  }
+      margin-top: 0;
+    }
 
     .photo {
-    width: 300px;
-    height: 300px;
-  }
-
+      width: 300px;
+      height: 300px;
+    }
   }
 
   @media (min-width: 992px) {
     .container {
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-  }
+      margin-top: 5%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: start;
+    }
 
     .photo {
-    min-width: 400px;
-    height: auto;
-    padding: 3%;
-  }
+      min-width: 400px;
+      height: auto;
+      padding: 3%;
+    }
 
-   .tipography {
-
-    p {
-      font-size: 1.2rem;
+    .tipography {
+      p {
+        font-size: 1.2rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
+      span {
+        font-size: 2rem;
+        font-family: "Shadows Into Light", cursive;
+        color: var(--primary-color);
+      }
     }
-    h1 {
-      font-size: 1.5rem;
-      font-weight: 900;
-    }
-    span {
-      font-size: 2rem;
-      font-family: "Shadows Into Light", cursive;
-      color: var(--primary-color);
-    }
-  }
   }
 `;
 

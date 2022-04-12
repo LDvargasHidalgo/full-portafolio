@@ -58,11 +58,22 @@ function Navbar() {
 
 const NavbarPageStyled = styled.nav`
 *,
+
 *::after,
 *::before {
   margin: 0;
   box-sizing: border-box;
 } 
+
+.nav {
+  position: relative;
+  z-index: 150;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15vh;
+  background: rgb(20, 19, 19);
+}
 
 li {
   list-style: none;
@@ -88,15 +99,6 @@ a:hover{
    text-shadow: 0 0 5px var(--primary-color),  0 0 15px var(--primary-color),  0 0 30px var(--primary-color), 0 0 5px var(--primary-color);
   }
 
-.nav {
-  position: static;
-  z-index: 150;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 15vh;
-  background: rgb(20, 19, 19);
-}
 
 
 .nav__brand {
@@ -129,7 +131,7 @@ a:hover{
     position: fixed;
     top: 0.1vh;
     right: 0;
-    height: 50%;
+    height: 100%;
     width: 100vw;
     background: rgb(20, 19, 19);
     flex-direction: column;
