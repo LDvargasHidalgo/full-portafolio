@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
 
    --family-title:'Shadows Into Light', cursive;
     --primary-color: #ae0d23;
-    --background-dark-color: #10121A;
+    --background-dark-color: black;
     --border-color: #2e344e;
     --font-light-color: #fff;
     --sidebar-dark-color: #191D2B;

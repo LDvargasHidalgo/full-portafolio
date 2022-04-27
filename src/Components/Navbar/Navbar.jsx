@@ -28,6 +28,11 @@ function Navbar() {
           </NavLink>
         </li>
         <li className="nav__item">
+          <NavLink to="/AboutMe" activeclassname=" " className="nav__link">
+            Acerca de mí
+          </NavLink>
+        </li>
+        <li className="nav__item">
           <NavLink
             to="/projects"
             activeclassname="active-class links"
@@ -72,7 +77,7 @@ const NavbarPageStyled = styled.nav`
   align-items: center;
   justify-content: space-around;
   height: 15vh;
-  background: rgb(20, 19, 19);
+ /*  background: rgb(20, 19, 19); */
 }
 
 li {
@@ -93,14 +98,11 @@ a:hover{
   text-shadow: 0 0 5px rgb(226, 113, 7),  0 0 15px rgb(226, 113, 7),  0 0 30px rgb(226, 113, 7), 0 0 5px rgb(226, 113, 7);
 }
 
-
   .span{
     font-size: 2rem;
    text-shadow: 0 0 5px var(--primary-color),  0 0 15px var(--primary-color),  0 0 30px var(--primary-color), 0 0 5px var(--primary-color);
   }
-
-
-
+  
 .nav__brand {
   text-transform: uppercase;
 }

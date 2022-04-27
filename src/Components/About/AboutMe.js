@@ -7,13 +7,13 @@ import { Link } from "react-router-dom";
 import Photo from "../../img/foto.jpg";
 import Cv from "../../assets/Laura Daniela Vargas Hidalgo.pdf";
 
-function HomePage() {
+function AboutMe() {
   return (
-    <HomePageStyled>
+    <AboutMePageStyled>
       <div className="container-main">
         <div className="container">
           <div className="photo">
-            <img src="https://i.pinimg.com/originals/32/40/b1/3240b18af92b6beb0b8056b993aa47d5.gif" alt="" />
+            <img src={Photo} alt="" />
           </div>
           <div className="tipography">
             <h1>
@@ -27,40 +27,16 @@ function HomePage() {
               tecnologías en entorno de aprendizaje acelerado y una excelente
               habilidad de resolución de problemas.
             </p>
-            <div className="icons  i-facebook">
-              <Link to="#" className="icon i-facebook">
-                <FacebookIcon />
-              </Link>
-              <a
-                href="https://github.com/LDvargasHidalgo"
-                className="icon i-github"
-              >
-                <GithubIcon />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/daniela-vargas-hidalgo/"
-                className="icon i-LinkedIn"
-              >
-                <LinkedInIcon />
-              </a>
-            </div>
+         
             <br />
-            <div>
-              <a href={Cv} download={"downloadCv"} className="btn-neon">
-                <span id="span1"></span>
-                <span id="span2"></span>
-                <span id="span3"></span>
-                <span id="span4"></span>
-                <b>Descargar CV</b>
-              </a>
-            </div>
+         
           </div>
         </div>
       </div>
-    </HomePageStyled>
+    </AboutMePageStyled>
   );
 }
-const HomePageStyled = styled.header`
+const AboutMePageStyled = styled.header`
   @import url("https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Fuzzy+Bubbles&family=Lobster&family=Pacifico&family=Redressed&family=Shadows+Into+Light&family=Vujahday+Script&display=swap");
 
   .container-main {
@@ -79,17 +55,17 @@ const HomePageStyled = styled.header`
 
   .tipography {
     text-align: center;
-    padding: 3px 20px;
+    padding: 70px 20px;    
 
     p {
       font-size: 1rem;
     }
     h1 {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       font-weight: 900;
     }
     span {
-      font-size: 1.8rem;
+      font-size: 5rem;
       font-family: "Shadows Into Light", cursive;
       color: var(--primary-color);
     }
@@ -98,12 +74,12 @@ const HomePageStyled = styled.header`
   .photo {
     display: flex;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     img {
       width: 100%;
       height: 100%;
-      
+      border-radius: 50%;
       position: relative;
     }
   }
@@ -266,4 +242,4 @@ const HomePageStyled = styled.header`
   }
 `;
 
-export default HomePage;
+export default AboutMe;

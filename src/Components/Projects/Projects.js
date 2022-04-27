@@ -41,8 +41,7 @@ const ProjectsPageStyled = styled.header`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Berkshire Swash', cursive;
-
+  font-family: "Berkshire Swash", cursive;
 
   .container-main-cards {
     position: relative;
@@ -51,7 +50,6 @@ const ProjectsPageStyled = styled.header`
     flex-wrap: wrap;
     justify-content: center;
     min-height: 70vh;
- 
   }
 
   .card {
@@ -87,7 +85,7 @@ const ProjectsPageStyled = styled.header`
 
   .content h2,
   a {
-  /*   color: rgba(255, 255, 255, 0.8); */
+    /*   color: rgba(255, 255, 255, 0.8); */
     text-decoration: none;
     margin: 10px 0;
     font-family: sans-serif;
@@ -103,17 +101,20 @@ const ProjectsPageStyled = styled.header`
 
   .icons {
     .icon {
-      border: 2px solid var(--border-color);
-      border-radius: 50%;
+ 
+       border: 2px solid var(--border-color); 
+   
       transition: all 0.4s ease-in-out;
+      width: 100px;
+      height: auto;
       cursor: pointer;
 
       &:not(:last-child) {
-        margin-right: 1rem;
+        margin-right: 2rem;
       }
 
       svg {
-        margin: 0.5rem;
+          margin:0.2rem;
       }
     }
 
@@ -133,11 +134,10 @@ const ProjectsPageStyled = styled.header`
   }
 
   @media (min-width: 600px) {
-margin-top: 50px;
- .card{
-   margin: 30px;
- }
-
+    margin-top: 50px;
+    .card {
+      margin: 30px;
+    }
   }
 `;
 
