@@ -1,5 +1,21 @@
-# Material ui => npm install material-ui/icons
-# bootstrap
+# PORTAFOLIO 2022 EDUCAMAS
+![Captura de pantalla de 2022-04-11 21-41-34](https://user-images.githubusercontent.com/91891348/162869033-b363f5a7-718b-4f5b-bda9-6142114f8e17.png)
+![Captura de pantalla de 2022-04-11 21-42-26](https://user-images.githubusercontent.com/91891348/162869043-0f01542f-307e-41ae-adb8-a347a2ba7c21.png)
+![Captura de pantalla de 2022-04-11 21-42-44](https://user-images.githubusercontent.com/91891348/162869049-1981f8ea-0af2-4368-adf1-cf65b4268891.png)
+
+# STACK
+* Ract (create react-app)
+* Styled-component
+* React-icons
+* emailjs
+* vercel
+
+# DEPLOY
+*https://full-portafolio.vercel.app/
+
+
+
+
 
 # Getting Started with Create React App
 
