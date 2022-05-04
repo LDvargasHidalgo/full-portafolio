@@ -1,8 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 :root {
-
-   --family-title:'Shadows Into Light', cursive;
+ 
     --primary-color:rgb(252, 70, 107);
     --background-dark-color: black;
     --border-color: #2e344e;
@@ -27,7 +26,6 @@ body {
   
 }
 a{
-   font-family: inherit;
    color:inherit ;
 }
 `;

@@ -1,11 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import GithubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons//LinkedIn";
-import { Link } from "react-router-dom";
 import Photo from "../../img/foto.jpg";
-import Cv from "../../assets/Laura Daniela Vargas Hidalgo.pdf";
+
 
 function AboutMe() {
   return (
@@ -19,10 +15,11 @@ function AboutMe() {
             <h1>
               Hola, soy <span>Laura Vargas </span>
             </h1>
+            <br/>
             <p>
-              Desarrolladora frontend, e trabajado en proyectos con tecnologías
+              Desarrolladora full stack, e trabajado en proyectos con tecnologías
               enfocadas al desarrollo web, como lo son HTML, CSS, Bootstrap,
-              JavaScript y React. <br />
+              JavaScript ,React, python, Django y php <br />
               Tengo gran capacidad de trabajo en equipo, adaptación a las nuevas
               tecnologías en entorno de aprendizaje acelerado y una excelente
               habilidad de resolución de problemas.
@@ -37,7 +34,6 @@ function AboutMe() {
   );
 }
 const AboutMePageStyled = styled.header`
-  @import url("https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Fuzzy+Bubbles&family=Lobster&family=Pacifico&family=Redressed&family=Shadows+Into+Light&family=Vujahday+Script&display=swap");
 
   .container-main {
     display: flex;
@@ -55,7 +51,7 @@ const AboutMePageStyled = styled.header`
 
   .tipography {
     text-align: center;
-    padding: 70px 20px;    
+    padding: 20px 10px;    
 
     p {
       font-size: 1rem;
@@ -63,19 +59,21 @@ const AboutMePageStyled = styled.header`
     h1 {
       font-size: 1.5rem;
       font-weight: 900;
-    }
-    span {
-      font-size: 5rem;
-      font-family: "Shadows Into Light", cursive;
+    
+      span {
+      font-size: 2rem;
+      font-family: "Mochiy Pop One", sans-serif;
       color: var(--primary-color);
     }
+    }
+
   }
 
   .photo {
     display: flex;
     justify-content: center;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     img {
       width: 100%;
       height: 100%;
