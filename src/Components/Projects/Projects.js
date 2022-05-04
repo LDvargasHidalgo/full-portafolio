@@ -5,7 +5,7 @@ import LanguageIcon from "@material-ui/icons/Language";
 import ProjectsData from "../../Data/Data";
 
 function Projects() {
-  const [items, setItems] = useState(ProjectsData);
+  const [items] = useState(ProjectsData);
   return (
     <ProjectsPageStyled>
       <div className="container-main-cards">
@@ -36,8 +36,6 @@ function Projects() {
   );
 }
 const ProjectsPageStyled = styled.header`
-  /*   height: 100vh;
-  position: relative; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -49,30 +47,28 @@ const ProjectsPageStyled = styled.header`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 70vh;
   }
 
   .card {
-    margin: 20px;
+    /* margin: 20px; */
     width: 330px;
-    height: 300px;
-    border-radius: 5px;
+    height: 200px;
+    border-radius: 2px;
     margin: 10px;
     background-color: black;
-    border-radius: 10%;
   }
 
   .card img {
     width: 330px;
-    height: 300px;
+    height: 200px;
     position: absolute;
-    border-radius: 10%;
+    border-radius: 2%;
   }
   .content {
     position: relative;
     width: 330px;
-    height: 300px;
-    border-radius: 10%;
+    height: 200px;
+    border-radius: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,11 +84,11 @@ const ProjectsPageStyled = styled.header`
     /*   color: rgba(255, 255, 255, 0.8); */
     text-decoration: none;
     margin: 10px 0;
-    font-family: sans-serif;
+    font-family: "Mochiy Pop One", sans-serif;
   }
 
   .content a {
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .card:hover .content {
@@ -101,11 +97,7 @@ const ProjectsPageStyled = styled.header`
 
   .icons {
     .icon {
- 
-       border: 2px solid var(--border-color); 
-   
       transition: all 0.4s ease-in-out;
-      width: 100px;
       height: auto;
       cursor: pointer;
 
@@ -114,31 +106,59 @@ const ProjectsPageStyled = styled.header`
       }
 
       svg {
-          margin:0.2rem;
+        margin: 0.2rem;
       }
     }
 
     .i-deploy {
       &:hover {
-        border: 2px solid #0c7a9b;
         color: #0c7a9b;
       }
     }
 
     .i-github {
       &:hover {
-        border: 2px solid #5f4687;
         color: #5f4687;
       }
     }
   }
 
-  @media (min-width: 600px) {
-    margin-top: 50px;
+  @media (min-width: 785px) {
     .card {
-      margin: 30px;
+      width: 330px;
+      height: 200px;
+     
+    }
+
+    .card img {
+      width: 330px;
+      height: 200px;
+      
+    }
+    .content {
+      width: 330px;
+      height: 200px;
     }
   }
+
+  @media (min-width: 1100px) {
+    .card {
+      width: 530px;
+      height: 300px;     
+    }
+
+    .card img {
+      width: 530px;
+      height: 300px;     
+      
+    }
+    .content {
+      width: 530px;
+      height: 300px;     
+    }
+
+  }
+
 `;
 
 export default Projects;
