@@ -3,7 +3,7 @@ const GlobalStyle = createGlobalStyle`
 :root {
 
    --family-title:'Shadows Into Light', cursive;
-    --primary-color: #ae0d23;
+    --primary-color:rgb(252, 70, 107);
     --background-dark-color: black;
     --border-color: #2e344e;
     --font-light-color: #fff;

@@ -99,7 +99,8 @@ a:hover{
 }
 
   .span{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: "Mochiy Pop One", sans-serif;
    text-shadow: 0 0 5px var(--primary-color),  0 0 15px var(--primary-color),  0 0 30px var(--primary-color), 0 0 5px var(--primary-color);
   }
   
