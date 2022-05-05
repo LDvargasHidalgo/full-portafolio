@@ -49,7 +49,7 @@ event.preventDefault();
    </ContactStyled>
  );
 };
-
+/* style */
 const ContactStyled = styled.header`
   
   z-index: 200;
