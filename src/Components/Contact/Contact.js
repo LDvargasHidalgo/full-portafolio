@@ -14,6 +14,7 @@ event.preventDefault();
        "7P6gSedE1cFRSlXnx"
      )
      .then(response => alert("Tu mensaje ha sido enviado correctamente"))
+     event.target.reset()
      .catch(error=> console.log(error));
  };
  return (
@@ -49,7 +50,7 @@ event.preventDefault();
    </ContactStyled>
  );
 };
-/* style */
+/*  */
 const ContactStyled = styled.header`
   
   z-index: 200;
