@@ -1,56 +1,57 @@
 import React from "react";
 import styled from "styled-components";
 import emailjs from "emailjs-com";
-
+ 
 export const Contact = () => {
 const sendEmail = (event) => {
 event.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_pd5l3tu",
-        "template_qd8fhge",
-        event.target,
-        "7P6gSedE1cFRSlXnx"
-      )
-      .then((response) => alert("Tu mensaje ha sido enviado correctamente"))
-      .catch((error) => console.log(error));
-  };
-  return (
-    <ContactStyled>
-      <div className="div-form">
-        <h4 className="title-form">Contáctame</h4>
-        <form action="" className="form-mail" onSubmit={sendEmail}>
-          <div className="section-form">
-            <label>Nombre</label>
-            <input type="text" name="user_name" />
-          </div>
-          <div className="section-form">
-            <label>Correo</label>
-            <input type="email" name="eser_email" />
-          </div>
-          <div className="section-form">
-            <label>Mensaje</label>
-            <textarea name="user_message" id="" cols="20" rows="2"></textarea>
-          </div>
-          <hr />
-          <div>
-              <button className="btn-neon bg-dark ">
-                <span id="span1"></span>
-                <span id="span2"></span>
-                <span id="span3"></span>
-                <span id="span4"></span>
-                <b>Enviar</b>
-              </button>
-            </div>
-         
-        </form>
-      </div>
-    </ContactStyled>
-  );
+ 
+   emailjs
+     .sendForm(
+       "service_pd5l3tu",
+       "template_qd8fhge",
+       event.target,
+       "7P6gSedE1cFRSlXnx"
+     )
+     .then(response => alert("Tu mensaje ha sido enviado correctamente"))
+     .catch(error=> console.log(error));
+ };
+ return (
+   <ContactStyled>
+     <div className="div-form">
+       <h4 className="title-form">Contáctame</h4>
+       <form action="" className="form-mail" onSubmit={sendEmail}>
+         <div className="section-form">
+           <label>Nombre</label>
+           <input type="text" name="user_name" />
+         </div>
+         <div className="section-form">
+           <label>Correo</label>
+           <input type="email" name="eser_email" />
+         </div>
+         <div className="section-form">
+           <label>Mensaje</label>
+           <textarea name="user_message" id="" cols="20" rows="2"></textarea>
+         </div>
+         <hr />
+         <div>
+             <button className="btn-neon bg-dark "  type="submit" >
+               <span id="span1"></span>
+               <span id="span2"></span>
+               <span id="span3"></span>
+               <span id="span4"></span>
+               <b>Enviar</b>
+             </button>
+           </div>
+       
+       </form>
+     </div>
+   </ContactStyled>
+ );
 };
+
 const ContactStyled = styled.header`
-  @import url("https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Fuzzy+Bubbles&family=Lobster&family=Pacifico&family=Redressed&family=Shadows+Into+Light&family=Vujahday+Script&display=swap");
+  
   z-index: 200;
   display: flex;
   justify-content: center;
@@ -58,8 +59,9 @@ const ContactStyled = styled.header`
   margin: 0 auto;
 
   .div-form {
+    position: relative;
     min-width: 70%;
-    border: 3px dashed #ae0d23;
+    border: 3px dashed var(--primary-color);
     margin: 10px 15px;
     display: flex;
     flex-direction: column;
@@ -68,6 +70,11 @@ const ContactStyled = styled.header`
     text-align: center;
     padding: 3%;
     border-radius: 2%;
+    font-family: "Mochiy Pop One", sans-serif;
+    h4{
+      color: var(--primary-color);
+      font-size: 2rem;
+    }
   }
 
   .section-form {
@@ -155,3 +162,4 @@ const ContactStyled = styled.header`
   }
 
 `;
+export default Contact;
