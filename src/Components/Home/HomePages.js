@@ -19,10 +19,7 @@ function HomePage() {
   return (
     <HomePageStyled>
       <div className="container-main">
-        <div className="container">
-          {/*     <div className="photo">
-            <img src="https://i.pinimg.com/originals/32/40/b1/3240b18af92b6beb0b8056b993aa47d5.gif" alt="" />
-          </div> */}
+        <div className="container">    
 
           <div className="tipography">
             <div className="container-hello" data-aos="fade-up">
@@ -31,7 +28,7 @@ function HomePage() {
                   options={{
                     strings: [
                       "Hola mundo, yo soy",
-                      "Helo world, I'm",
+                      "Hello world, I'm",
                       "Bonjour le monde, je suis",
                       "Olá mundo, eu sou",
                       "Hallo Welt, ich bin",
@@ -78,30 +75,22 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className="logo">
-          {/* https://cdn.pixabay.com/photo/2016/03/31/23/36/books-1297707_960_720.png */}
-          <img
-            src="https://cdn.pixabay.com/photo/2016/06/13/11/46/office-1454087_960_720.png"
-            width="200px"
-            alt=""
-          />
-        </div>
+    
       </div>
     </HomePageStyled>
   );
 }
 const HomePageStyled = styled.header`
   .container-main {
-    /* border: 5px solid yellow; */
     overflow: hidden;
     max-height: 88vh;
   }
 
-  .container {
-    /*  border: 5px solid green; */
+  .container {  
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
+    
   }
 
   .tipography {
@@ -137,12 +126,7 @@ const HomePageStyled = styled.header`
     }
   }
 
-  .logo {
-    display: flex;
-    img {
-      margin: 0 auto;
-    }
-  }
+ 
 
   /* Redes sociales */
   .icons {
@@ -326,9 +310,9 @@ const HomePageStyled = styled.header`
 
   @media (min-width: 1100px) {
     .container {
-      width: 70%;
-      margin-left:30%;
+      width: 70%;     
       padding-top: 40px;
+      margin:0 auto;
     }
     .container-hello {
       .info {
