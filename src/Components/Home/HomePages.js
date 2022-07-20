@@ -94,7 +94,7 @@ const HomePageStyled = styled.header`
   }
 
   .tipography {
-    /*     border: 5px solid blue; */
+    border: 5px solid blue; 
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -109,6 +109,7 @@ const HomePageStyled = styled.header`
     .info {
       h1 {
         padding: 1rem 0;
+        margin:0 auto;
         background: -webkit-radial-gradient(
           circle,
           #b5b7be 10%,
@@ -116,17 +117,16 @@ const HomePageStyled = styled.header`
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-family: "Mochiy Pop One", sans-serif;
+        margin:0 auto;
       }
       p {
         display: flex;
         justify-content: center;
       }
     }
-  }
-
- 
+  } 
 
   /* Redes sociales */
   .icons {
