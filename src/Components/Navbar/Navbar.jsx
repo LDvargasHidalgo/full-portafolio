@@ -18,7 +18,7 @@ const Navbar = () => {
 
         <ul className="app__navbar-links">
           <li className="nav__item">
-            <NavLink to="/home" activeclassname=" " className="nav__link">
+            <NavLink to="/" activeclassname=" " className="nav__link">
               Inicio
             </NavLink>
           </li>
@@ -59,7 +59,7 @@ const Navbar = () => {
               <ul>
                 <li className="nav__item">
                   <NavLink
-                    to="/home"
+                    to="/"
                     activeclassname=" "
                     className="nav__link  onClick={() => setToggle(false)}"
                     onClick={() => setToggle(false)}
