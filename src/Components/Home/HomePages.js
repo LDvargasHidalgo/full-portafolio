@@ -94,7 +94,7 @@ const HomePageStyled = styled.header`
   }
 
   .tipography {
-    border: 5px solid blue; 
+    //border: 5px solid blue; 
     width: 100%;
     display: flex;
     flex-direction: column;
