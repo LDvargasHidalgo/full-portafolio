@@ -110,12 +110,7 @@ const NavbarPageStyled = styled.nav`
     font-size: 1rem;
     text-transform: uppercase;
 
-    a:hover {
-      color: aliceblue;
-      text-shadow: 0 0 5px rgb(226, 113, 7), 0 0 15px rgb(226, 113, 7),
-        0 0 30px rgb(226, 113, 7), 0 0 5px rgb(226, 113, 7);
-      padding: 2px;
-    }
+  
     .active {
       text-shadow: 0 0 5px rgb(226, 113, 7), 0 0 15px rgb(226, 113, 7),
         0 0 30px rgb(226, 113, 7), 0 0 5px rgb(226, 113, 7);
@@ -167,6 +162,7 @@ const NavbarPageStyled = styled.nav`
     li {
       margin: 0 1rem;
       cursor: pointer;
+      font-family: "Mochiy Pop One", sans-serif;
 
       flex-direction: column;
 
@@ -184,7 +180,7 @@ const NavbarPageStyled = styled.nav`
         text-decoration: none;
         flex-direction: column;
 
-        text-transform: uppercase;
+       
         font-weight: 500;
 
         transition: all 0.3s ease-in-out;
@@ -285,6 +281,10 @@ const NavbarPageStyled = styled.nav`
 
       @media screen and (min-width: 900px) {
         display: none;
+
+        h5{
+          font-size:5rem;
+        }
       }
     }
 

@@ -95,6 +95,7 @@ const HomePageStyled = styled.header`
 
   .tipography {
     //border: 5px solid blue; 
+    padding:2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -117,7 +118,7 @@ const HomePageStyled = styled.header`
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-family: "Mochiy Pop One", sans-serif;
         margin:0 auto;
       }

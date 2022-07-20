@@ -42,14 +42,16 @@ const ProjectsData =[
       id: 5,
       title: 'CovidApp',
       image:CovidApp,
-      git:'https://jhuset2003.github.io/Impacto_Covid-19_en_el_mundo/',    
+      git:'https://github.com/Jhuset2003/Impacto_Covid-19_en_el_mundo', 
+      deploy:"https://jhuset2003.github.io/Impacto_Covid-19_en_el_mundo/",   
       language:"js"
    },
    {
       id: 6,
       title: 'Portafolio',
       image:Portafolio, 
-      git:'https://github.com/LDvargasHidalgo/full-portafolio',    
+      git:'https://github.com/LDvargasHidalgo/full-portafolio', 
+      deploy:"https://full-portafolio.vercel.app/",   
       language:"react"
    },
 ];
